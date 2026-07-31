@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case do OrderFlow Desktop, sistema em Python para recebimento, organização e impressão de pedidos em tempo real.">
+  <title>OrderFlow Desktop | Case de Andrei Rodrigues</title>
+  <link rel="stylesheet" href="orderflow-case.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="project-nav">
+    <a class="project-brand" href="index.html" aria-label="Voltar ao portfólio de Andrei Rodrigues">Andrei Rodrigues</a>
+
+    <nav class="project-nav__actions" aria-label="Navegação do projeto">
+      <a class="nav-link" href="#fluxo">Fluxo</a>
+      <a class="nav-link" href="#recursos">Recursos</a>
+      <a class="nav-link" href="#galeria">Telas</a>
+      <a class="button button--small button--outline" href="index.html#PYTHON">Voltar ao portfólio</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="case-hero">
+      <div class="case-hero__content">
+        <div class="status-row">
+          <span class="status-badge"><span class="status-dot" aria-hidden="true"></span> Versão funcional em evolução</span>
+          <span class="project-type">Aplicação desktop para Windows</span>
+        </div>
+
+        <p class="eyebrow">CASE DE AUTOMAÇÃO COM PYTHON</p>
+        <h1>OrderFlow</h1>
+
+        <p class="case-hero__lead">
+          Sistema desenvolvido em Python para receber, organizar e imprimir pedidos em tempo real,
+          conectando o atendimento do estabelecimento ao Firebase e às impressoras do Windows.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button--primary" href="https://github.com/andreirodrigues98/python_portfolio/tree/main/orderflow_desktop" target="_blank" rel="noopener noreferrer">
+            Ver código no GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button button--ghost" href="#fluxo">Entender o funcionamento</a>
+        </div>
+
+        <dl class="project-facts" aria-label="Resumo do projeto">
+          <div><dt>Objetivo</dt><dd>Automatizar pedidos e impressão</dd></div>
+          <div><dt>Integração</dt><dd>Firebase em tempo real</dd></div>
+          <div><dt>Distribuição</dt><dd>Executável e instalador Windows</dd></div>
+        </dl>
+      </div>
+
+      <div class="case-hero__visual">
+        <div class="desktop-frame">
+          <div class="desktop-frame__bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <div class="desktop-frame__title">Dudôce — Pedidos</div>
+          </div>
+          <img src="img/orderflow/pedidos-recebidos.png" alt="Tela principal do OrderFlow Desktop com pedidos aguardando impressão">
+        </div>
+        <p class="visual-caption">Recebimento automático, sinalização de novo pedido e separação por status.</p>
+      </div>
+    </section>
+
+    <section class="evolution-section section-shell" aria-labelledby="evolution-title">
+      <div class="evolution-card">
+        <div class="evolution-icon" aria-hidden="true">↻</div>
+        <div>
+          <p class="eyebrow">VERSÃO 1.0 EM EVOLUÇÃO</p>
+          <h2 id="evolution-title">Funcional hoje, melhorando continuamente.</h2>
+          <p>
+            Esta é uma versão funcional do sistema e continua passando por evolução. O trabalho atual envolve
+            correção de bugs, refinamento da experiência, melhoria dos fluxos, ampliação da compatibilidade com
+            impressoras e ajustes nos relatórios e controles operacionais.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview-section section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">VISÃO DO PROJETO</p>
+        <h2>Do pedido realizado à impressão</h2>
+      </div>
+
+      <div class="overview-grid">
+        <article class="overview-card overview-card--dark">
+          <span class="card-number">01</span>
+          <h3>O problema</h3>
+          <p>
+            Acompanhar pedidos manualmente aumenta o risco de demora, esquecimento, duplicidade e perda de informações durante o atendimento.
+          </p>
+        </article>
+
+        <article class="overview-card">
+          <span class="card-number">02</span>
+          <h3>A solução</h3>
+          <p>
+            Manter um aplicativo desktop conectado ao Firebase para identificar novos pedidos, alertar o atendente e organizar impressão, histórico e relatórios.
+          </p>
+        </article>
+
+        <article class="overview-card overview-card--accent">
+          <span class="card-number">03</span>
+          <h3>Minha atuação</h3>
+          <p>
+            Arquitetura do projeto, interface desktop, integração em tempo real, impressão no Windows, persistência local, relatórios e empacotamento do sistema.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="flow-section section-shell" id="fluxo">
+      <div class="section-heading section-heading--light">
+        <p class="eyebrow">FLUXO COMPLETO</p>
+        <h2>O pedido avança por etapas claras</h2>
+        <p>
+          O sistema acompanha o pedido desde o registro no Firebase até a impressão, mantendo os dados disponíveis para consulta e reimpressão.
+        </p>
+      </div>
+
+      <div class="flow-video">
+  <div class="flow-video__header">
+    <p class="eyebrow">DEMONSTRAÇÃO DO SISTEMA</p>
+
+    <h3>Veja o OrderFlow funcionando na prática</h3>
+
+    <p>
+      Acompanhe o fluxo completo: recebimento do pedido, impressão,
+      histórico, relatórios e configurações.
+    </p>
+  </div>
+
+        <div class="flow-video__frame">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="img/orderflow/pedidos-recebidos.png"
+            aria-label="Demonstração completa do sistema OrderFlow Desktop"
+          >
+            <source
+              src="video/order_flow_video.mov"
+              type="video/mp4"
+            >
+
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
+        </div>
+
+        <p class="flow-video__caption">
+          Do pedido realizado no site ao acompanhamento dos resultados em um único sistema.
+        </p>
+      </div>
+
+      <div class="flow-track" aria-label="Etapas do fluxo do OrderFlow Desktop">
+        <article class="flow-step"><span>01</span><h3>Pedido realizado</h3><p>O cliente confirma os produtos, dados de entrega, pagamento e observações.</p></article>
+        <article class="flow-step"><span>02</span><h3>Firebase atualizado</h3><p>As informações são armazenadas e ficam disponíveis para o aplicativo desktop.</p></article>
+        <article class="flow-step"><span>03</span><h3>Alerta automático</h3><p>Um card com borda verde aparece e o aviso sonoro sinaliza o novo pedido.</p></article>
+        <article class="flow-step"><span>04</span><h3>Conferência</h3><p>O atendente visualiza cliente, itens, total, horário e demais informações.</p></article>
+        <article class="flow-step"><span>05</span><h3>Impressão</h3><p>O comprovante não fiscal é preparado conforme impressora, papel e quantidade de vias.</p></article>
+        <article class="flow-step"><span>06</span><h3>Histórico</h3><p>O pedido passa para impressos e permanece disponível para consulta e reimpressão.</p></article>
+      </div>
+    </section>
+
+    <section class="features-section section-shell" id="recursos">
+      <div class="section-heading">
+        <p class="eyebrow">RECURSOS PRINCIPAIS</p>
+        <h2>Operação centralizada em uma aplicação desktop</h2>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card"><span>01</span><h3>Recebimento em tempo real</h3><p>Novos pedidos aparecem automaticamente, sem atualizar a tela manualmente.</p></article>
+        <article class="feature-card"><span>02</span><h3>Alertas visuais e sonoros</h3><p>Borda verde e aviso sonoro ajudam o atendente a identificar rapidamente uma nova solicitação.</p></article>
+        <article class="feature-card"><span>03</span><h3>Impressão configurável</h3><p>Suporte a impressoras comuns e térmicas, bobinas de 58 mm e 80 mm e múltiplas vias.</p></article>
+        <article class="feature-card"><span>04</span><h3>Pedidos por status</h3><p>Separação entre pendentes e impressos para reduzir confusão e duplicidade operacional.</p></article>
+        <article class="feature-card"><span>05</span><h3>Histórico e reimpressão</h3><p>Consulta de pedidos anteriores e nova impressão usando os dados já armazenados.</p></article>
+        <article class="feature-card"><span>06</span><h3>Relatórios</h3><p>Resumo diário, mensal e anual com pedidos, valores, ticket médio e produtos vendidos.</p></article>
+      </div>
+    </section>
+
+    <section class="printing-section section-shell">
+      <div class="printing-copy">
+        <p class="eyebrow">IMPRESSÃO E CONFIGURAÇÃO</p>
+        <h2>Adaptado ao ambiente do estabelecimento</h2>
+        <p>
+          O usuário escolhe a impressora, o tipo de impressão, a largura da bobina, a quantidade de vias e o uso do aviso sonoro.
+          As configurações ficam salvas localmente para evitar ajustes repetidos a cada abertura do aplicativo.
+        </p>
+
+        <div class="print-options" aria-label="Opções de impressão">
+          <span>Impressora comum</span>
+          <span>Impressora térmica</span>
+          <span>Bobina 58 mm</span>
+          <span>Bobina 80 mm</span>
+          <span>Teste de impressão</span>
+          <span>Teste de som</span>
+        </div>
+      </div>
+
+      <div class="printing-visual">
+        <img src="img/orderflow/config-impressora-termica.png" alt="Tela de configuração de impressora térmica do OrderFlow Desktop" loading="lazy">
+      </div>
+    </section>
+
+    <section class="architecture-section section-shell">
+      <div class="section-heading section-heading--light">
+        <p class="eyebrow">ARQUITETURA E TECNOLOGIAS</p>
+        <h2>Código separado por responsabilidades</h2>
+        <p>
+          A organização facilita manutenção, localização de erros e inclusão de novas funcionalidades durante a evolução do sistema.
+        </p>
+      </div>
+
+      <div class="architecture-grid">
+        <div class="code-tree" aria-label="Estrutura de pastas do projeto">
+          <div class="code-tree__bar"><span></span><span></span><span></span><p>orderflow_desktop / src</p></div>
+          <pre><code>src/
+├── modelos/
+├── controladores/
+├── servicos/
+├── ui/
+└── main.py</code></pre>
+        </div>
+
+        <div class="technology-panel">
+          <article><strong>Python</strong><span>Linguagem principal</span></article>
+          <article><strong>CustomTkinter</strong><span>Interface desktop</span></article>
+          <article><strong>Firebase Admin SDK</strong><span>Integração com Firebase</span></article>
+          <article><strong>Cloud Firestore</strong><span>Pedidos e acompanhamento em tempo real</span></article>
+          <article><strong>PyWin32</strong><span>Comunicação com impressoras do Windows</span></article>
+          <article><strong>Pillow</strong><span>Imagens e recursos visuais</span></article>
+          <article><strong>PyInstaller</strong><span>Criação do executável</span></article>
+          <article><strong>Inno Setup</strong><span>Instalador para Windows</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-shell" id="galeria">
+      <div class="section-heading">
+        <p class="eyebrow">TELAS DO SISTEMA</p>
+        <h2>Pedidos, histórico, relatórios e configurações</h2>
+        <p>Clique em uma imagem para ampliar.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-card gallery-card--wide" type="button" data-full="img/orderflow/pedidos-recebidos.png" data-title="Novos pedidos recebidos">
+          <img src="img/orderflow/pedidos-recebidos.png" alt="Dois pedidos pendentes no OrderFlow Desktop" loading="lazy">
+          <span><strong>Pedidos em tempo real</strong><small>Novo card com destaque visual</small></span>
+        </button>
+
+        <button class="gallery-card" type="button" data-full="img/orderflow/pedido-impresso.png" data-title="Pedido movido para impressos">
+          <img src="img/orderflow/pedido-impresso.png" alt="Pedido transferido para a área de impressos" loading="lazy">
+          <span><strong>Pedido impresso</strong><small>Separação automática por status</small></span>
+        </button>
+
+        <button class="gallery-card" type="button" data-full="img/orderflow/pedido-reimpresso.png" data-title="Controle de reimpressão">
+          <img src="img/orderflow/pedido-reimpresso.png" alt="Registro de reimpressão de pedido" loading="lazy">
+          <span><strong>Reimpressão</strong><small>Registro operacional das cópias</small></span>
+        </button>
+
+        <button class="gallery-card gallery-card--wide" type="button" data-full="img/orderflow/historico.png" data-title="Histórico de pedidos">
+          <img src="img/orderflow/historico.png" alt="Histórico de pedidos organizado por data" loading="lazy">
+          <span><strong>Histórico</strong><small>Consulta por ano, mês e dia</small></span>
+        </button>
+
+        <button class="gallery-card" type="button" data-full="img/orderflow/relatorio-pedidos.png" data-title="Relatório de pedidos">
+          <img src="img/orderflow/relatorio-pedidos.png" alt="Relatório diário com indicadores de pedidos" loading="lazy">
+          <span><strong>Relatório de pedidos</strong><small>Valores, ticket e horário de pico</small></span>
+        </button>
+
+        <button class="gallery-card" type="button" data-full="img/orderflow/relatorio-produtos.png" data-title="Relatório de produtos vendidos">
+          <img src="img/orderflow/relatorio-produtos.png" alt="Relatório com ranking de produtos vendidos" loading="lazy">
+          <span><strong>Produtos vendidos</strong><small>Quantidade e ranking</small></span>
+        </button>
+
+        <button class="gallery-card" type="button" data-full="img/orderflow/config-impressora-comum.png" data-title="Configuração de impressora comum">
+          <img src="img/orderflow/config-impressora-comum.png" alt="Configuração para impressora comum" loading="lazy">
+          <span><strong>Impressora comum</strong><small>Seleção de dispositivo e vias</small></span>
+        </button>
+
+        <button class="gallery-card" type="button" data-full="img/orderflow/config-impressora-termica.png" data-title="Configuração de impressora térmica">
+          <img src="img/orderflow/config-impressora-termica.png" alt="Configuração para impressora térmica e bobina" loading="lazy">
+          <span><strong>Impressora térmica</strong><small>Largura da bobina e quantidade de vias</small></span>
+        </button>
+
+        <button class="gallery-card gallery-card--wide" type="button" data-full="img/orderflow/sobre-sistema.png" data-title="Informações e configurações salvas">
+          <img src="img/orderflow/sobre-sistema.png" alt="Tela sobre o sistema e salvamento das configurações" loading="lazy">
+          <span><strong>Configurações locais</strong><small>Preferências mantidas entre os usos</small></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="result-section section-shell">
+      <div class="result-card">
+        <p class="eyebrow">RESULTADO</p>
+        <h2>Uma aplicação desktop que conecta pedido, atendimento e impressão.</h2>
+        <p>
+          O OrderFlow Desktop recebe pedidos em tempo real, alerta o atendente, organiza os registros por status,
+          imprime comprovantes e preserva o histórico para consulta, relatórios e reimpressões. O projeto também foi
+          preparado como executável e instalador, permitindo o uso em computadores Windows sem exigir que o cliente instale Python.
+        </p>
+
+        <div class="hero-actions hero-actions--center">
+          <a class="button button--light" href="https://github.com/andreirodrigues98/python_portfolio/tree/main/orderflow_desktop" target="_blank" rel="noopener noreferrer">
+            Acessar projeto no GitHub <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button button--outline" href="index.html#PYTHON">Voltar aos projetos Python</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="project-footer">
+    <p>OrderFlow Desktop · Case de Andrei Rodrigues</p>
+    <a href="index.html">Portfólio</a>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxTitle">
+    <button class="lightbox__close" type="button" aria-label="Fechar imagem ampliada">×</button>
+    <div class="lightbox__content">
+      <img id="lightboxImage" src="" alt="">
+      <p id="lightboxTitle"></p>
+    </div>
+  </dialog>
+
+  <script src="orderflow-case.js"></script>
+</body>
+</html>

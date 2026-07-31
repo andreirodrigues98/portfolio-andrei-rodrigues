@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case do Controly, aplicação web de organização pessoal desenvolvida por Andrei Rodrigues.">
+  <title>Controly | Case de Andrei Rodrigues</title>
+  <link rel="stylesheet" href="controly-case.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="project-nav">
+    <a class="project-brand" href="index.html" aria-label="Voltar ao portfólio de Andrei Rodrigues">
+      Andrei Rodrigues
+    </a>
+
+    <nav class="project-nav__actions" aria-label="Navegação do projeto">
+      <a class="nav-link" href="#galeria">Telas</a>
+      <a class="button button--small button--outline" href="index.html#CASE">Voltar ao portfólio</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="case-hero">
+      <div class="case-hero__content">
+        <div class="status-row">
+          <span class="status-badge"><span class="status-dot" aria-hidden="true"></span> Em desenvolvimento ativo</span>
+          <span class="project-type">Aplicação web</span>
+        </div>
+
+        <p class="eyebrow">CASE DE PRODUTO DIGITAL</p>
+        <h1>Controly</h1>
+        <p class="case-hero__lead">
+          Uma plataforma de organização pessoal para reunir tarefas, agenda, metas,
+          estudos, leitura, treinos, finanças e notas em um único painel.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button--primary" href="https://andreirodrigues98.github.io/controly/" target="_blank" rel="noopener noreferrer">
+            Testar aplicação <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button button--ghost" href="#acesso-teste">Ver acesso de teste</a>
+        </div>
+
+        <dl class="project-facts" aria-label="Resumo do projeto">
+          <div>
+            <dt>Objetivo</dt>
+            <dd>Centralizar a rotina</dd>
+          </div>
+          <div>
+            <dt>Formato</dt>
+            <dd>Responsivo</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Versão demonstrativa</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="case-hero__visual">
+        <div class="browser-frame">
+          <div class="browser-frame__bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <div class="browser-frame__address">andreirodrigues98.github.io/controly</div>
+          </div>
+          <img src="img/controly/controly-capa.png" alt="Mockup visual do painel do Controly">
+        </div>
+      </div>
+    </section>
+
+    <section class="overview-section section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">VISÃO DO PROJETO</p>
+        <h2>Organização sem espalhar a rotina em vários lugares.</h2>
+      </div>
+
+      <div class="overview-grid">
+        <article class="overview-card overview-card--dark">
+          <span class="card-number">01</span>
+          <h3>O problema</h3>
+          <p>
+            Tarefas, anotações, metas e registros pessoais costumam ficar distribuídos
+            entre aplicativos diferentes, dificultando a consulta e o acompanhamento.
+          </p>
+        </article>
+
+        <article class="overview-card">
+          <span class="card-number">02</span>
+          <h3>A proposta</h3>
+          <p>
+            Criar uma experiência única, com navegação lateral e módulos específicos,
+            para o usuário registrar e consultar diferentes áreas da própria rotina.
+          </p>
+        </article>
+
+        <article class="overview-card overview-card--accent">
+          <span class="card-number">03</span>
+          <h3>Minha atuação</h3>
+          <p>
+            Estrutura da interface, experiência responsiva, organização dos módulos,
+            lógica de interação, autenticação e evolução contínua do produto.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="demo-section" id="acesso-teste">
+      <div class="demo-section__intro">
+        <p class="eyebrow">DEMONSTRAÇÃO ABERTA</p>
+        <h2>Entre, explore e teste os fluxos.</h2>
+        <p>
+          A conta abaixo foi criada exclusivamente para apresentação no portfólio.
+          Como ela é compartilhada, os dados podem ser alterados ou apagados periodicamente.
+        </p>
+      </div>
+
+      <div class="demo-card">
+        <div class="demo-card__top">
+          <div>
+            <span class="demo-label">Login de teste</span>
+            <h3>Acesso rápido ao Controly</h3>
+          </div>
+          <span class="demo-icon" aria-hidden="true">↗</span>
+        </div>
+
+        <div class="credential-list">
+          <div class="credential">
+            <div>
+              <span>E-mail</span>
+              <strong id="demoEmail">teste@gmail.com</strong>
+            </div>
+            <button class="copy-button" type="button" data-copy="teste@gmail.com" aria-label="Copiar e-mail de teste">Copiar</button>
+          </div>
+
+          <div class="credential">
+            <div>
+              <span>Senha</span>
+              <strong id="demoPassword">Teste123</strong>
+            </div>
+            <button class="copy-button" type="button" data-copy="Teste123" aria-label="Copiar senha de teste">Copiar</button>
+          </div>
+        </div>
+
+        <a class="button button--light button--full" href="https://andreirodrigues98.github.io/controly/" target="_blank" rel="noopener noreferrer">
+          Abrir aplicação e entrar <span aria-hidden="true">↗</span>
+        </a>
+        <p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="modules-section section-shell">
+      <div class="section-heading section-heading--split">
+        <div>
+          <p class="eyebrow">MÓDULOS</p>
+          <h2>Uma estrutura para diferentes áreas da rotina</h2>
+        </div>
+        <p class="section-copy">
+          A navegação reúne os principais registros do usuário sem perder a clareza entre cada função
+        </p>
+      </div>
+
+      <div class="modules-grid">
+        <article class="module-card"><span>01</span><h3>Painel</h3><p>Resumo da rotina e acesso rápido aos registros principais.</p></article>
+        <article class="module-card"><span>02</span><h3>Atividades</h3><p>Criação de tarefas, prioridades e repetições.</p></article>
+        <article class="module-card"><span>03</span><h3>Calendário</h3><p>Consulta dos compromissos e itens planejados.</p></article>
+        <article class="module-card"><span>04</span><h3>Metas</h3><p>Acompanhamento de objetivos e evolução.</p></article>
+        <article class="module-card"><span>05</span><h3>Estudos</h3><p>Organização de matérias, tarefas e prioridades.</p></article>
+        <article class="module-card"><span>06</span><h3>Leitura</h3><p>Registro de livros e progresso de leitura.</p></article>
+        <article class="module-card"><span>07</span><h3>Treinos</h3><p>Planejamento e histórico de exercícios.</p></article>
+        <article class="module-card"><span>08</span><h3>Finanças</h3><p>Controle e consulta de registros financeiros.</p></article>
+        <article class="module-card"><span>09</span><h3>Notas e busca</h3><p>Anotações rápidas e pesquisa centralizada.</p></article>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="galeria">
+      <div class="section-shell">
+        <div class="section-heading section-heading--split gallery-heading">
+          <div>
+            <p class="eyebrow">INTERFACE COMPLETA</p>
+            <h2>Fotos de cada parte do sistema</h2>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-card gallery-card--wide" type="button" data-full="img/controly/painel.png" data-title="Painel">
+            <img src="img/controly/painel.png" alt="Espaço reservado para captura da tela Painel do Controly" loading="lazy">
+            <span><b>Painel</b><small>Visão geral da rotina</small></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-full="img/controly/atividades.png" data-title="Atividades">
+            <img src="img/controly/atividades.png" alt="Espaço reservado para captura da tela Atividades" loading="lazy">
+            <span><b>Atividades</b><small>Tarefas e repetições</small></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-full="img/controly/calendario.png" data-title="Calendário">
+            <img src="img/controly/calendario.png" alt="Espaço reservado para captura da tela Calendário" loading="lazy">
+            <span><b>Calendário</b><small>Planejamento visual</small></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-full="img/controly/metas.png" data-title="Metas">
+            <img src="img/controly/metas.png" alt="Espaço reservado para captura da tela Metas" loading="lazy">
+            <span><b>Metas</b><small>Objetivos e progresso</small></span>
+          </button>
+
+          <button class="gallery-card gallery-card--wide" type="button" data-full="img/controly/estudos.png" data-title="Estudos">
+            <img src="img/controly/estudos.png" alt="Espaço reservado para captura da tela Estudos" loading="lazy">
+            <span><b>Estudos</b><small>Matérias e prioridades</small></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-full="img/controly/leitura.png" data-title="Leitura">
+            <img src="img/controly/leitura.png" alt="Espaço reservado para captura da tela Leitura" loading="lazy">
+            <span><b>Leitura</b><small>Livros e evolução</small></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-full="img/controly/treinos.png" data-title="Treinos">
+            <img src="img/controly/treinos.png" alt="Espaço reservado para captura da tela Treinos" loading="lazy">
+            <span><b>Treinos</b><small>Rotina de exercícios</small></span>
+          </button>
+
+          <button class="gallery-card" type="button" data-full="img/controly/financas.png" data-title="Finanças">
+            <img src="img/controly/financas.png" alt="Espaço reservado para captura da tela Finanças" loading="lazy">
+            <span><b>Finanças</b><small>Registros financeiros</small></span>
+          </button>
+
+          <button class="gallery-card gallery-card--wide" type="button" data-full="img/controly/notas.png" data-title="Notas e busca">
+            <img src="img/controly/notas.png" alt="Espaço reservado para captura da tela Notas e busca" loading="lazy">
+            <span><b>Notas e busca</b><small>Informação centralizada</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="development-section section-shell">
+      <div class="development-card">
+        <div>
+          <p class="eyebrow">STATUS DO PRODUTO</p>
+          <h2>Ainda em evolução</h2>
+        </div>
+        <div class="development-copy">
+          <p>
+            O Controly está disponível em uma versão demonstrativa, mas o desenvolvimento continua.
+            A etapa atual envolve correções de bugs, melhorias de usabilidade, ajustes responsivos e refinamento dos módulos.
+          </p>
+          <ul>
+            <li>Correção contínua de comportamentos inesperados;</li>
+            <li>Melhoria da experiência no celular e no computador;</li>
+            <li>Refinamento visual e organização dos fluxos;</li>
+            <li>Evolução das funcionalidades a partir dos testes.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <p class="eyebrow">EXPERIMENTE O PROJETO</p>
+      <h2>Abra o Controly e explore a versão de demonstração.</h2>
+      <div class="hero-actions hero-actions--center">
+        <a class="button button--primary" href="https://andreirodrigues98.github.io/controly/" target="_blank" rel="noopener noreferrer">
+          Acessar demonstração <span aria-hidden="true">↗</span>
+        </a>
+        <a class="button button--ghost" href="index.html#CASE">Ver outros projetos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="case-footer">
+    <a href="index.html">Andrei Rodrigues</a>
+    <p>Desenvolvimento web, interfaces e lógica aplicada.</p>
+    <a href="index.html#IDEIA">Entrar em contato <span aria-hidden="true">↗</span></a>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxTitle">
+    <button class="lightbox__close" type="button" aria-label="Fechar imagem">×</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxTitle"></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="controly-case.js"></script>
+</body>
+</html>
