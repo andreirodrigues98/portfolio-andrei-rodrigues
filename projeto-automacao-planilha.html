@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Case de automação com Python para leitura de planilhas, validação de dados, preenchimento de formulários web e geração de relatórios."
+  >
+  <title>Automação de Cadastros | Case de Andrei Rodrigues</title>
+  <link rel="stylesheet" href="automacao-case.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="project-nav">
+    <a
+      class="project-brand"
+      href="index.html"
+      aria-label="Voltar ao portfólio de Andrei Rodrigues"
+    >
+      Andrei Rodrigues
+    </a>
+
+    <nav class="project-nav__actions" aria-label="Navegação do projeto">
+      <a class="nav-link" href="#processo">Processo</a>
+      <a class="nav-link" href="#recursos">Recursos</a>
+      <a class="nav-link" href="#galeria">Galeria</a>
+      <a class="button button--small button--outline" href="index.html#PYTHON">
+        Voltar ao portfólio
+      </a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="automation-hero">
+      <div class="automation-hero__copy">
+        <div class="status-row">
+          <span class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            Projeto funcional
+          </span>
+          <span class="project-type">Automação de processos</span>
+        </div>
+
+        <p class="eyebrow">PYTHON · EXCEL · AUTOMAÇÃO WEB</p>
+        <h1>Automação de Cadastros</h1>
+
+        <p class="automation-hero__lead">
+          Aplicação desenvolvida em Python para ler registros de uma planilha Excel,
+          validar os dados, preencher formulários web automaticamente e gerar um
+          relatório final com os resultados do processamento.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="button button--primary"
+            href="https://github.com/andreirodrigues98/python_portfolio/tree/main/12_automacao_site_planilha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver código no GitHub <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="button button--ghost" href="#demonstracao">
+            Assistir demonstração
+          </a>
+        </div>
+      </div>
+
+      <div class="automation-hero__visual" aria-label="Resumo visual da automação">
+        <div class="workflow-preview">
+          <div class="workflow-preview__bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>automacao_cadastros.py</p>
+          </div>
+
+          <div class="workflow-preview__content">
+            <div class="workflow-node">
+              <span class="workflow-node__number">01</span>
+              <div>
+                <strong>Planilha Excel</strong>
+                <small>Dados de entrada</small>
+              </div>
+            </div>
+
+            <span class="workflow-arrow" aria-hidden="true">↓</span>
+
+            <div class="workflow-node workflow-node--accent">
+              <span class="workflow-node__number">02</span>
+              <div>
+                <strong>Automação Python</strong>
+                <small>Validação e preenchimento</small>
+              </div>
+            </div>
+
+            <span class="workflow-arrow" aria-hidden="true">↓</span>
+
+            <div class="workflow-node">
+              <span class="workflow-node__number">03</span>
+              <div>
+                <strong>Relatório final</strong>
+                <small>Sucessos e registros inválidos</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="visual-caption">
+          Um fluxo completo, desde a leitura dos dados até o relatório de execução.
+        </p>
+      </div>
+    </section>
+
+    <section class="metrics-strip" aria-label="Resumo técnico do projeto">
+      <article>
+        <span>Entrada</span>
+        <strong>Planilha .xlsx</strong>
+      </article>
+      <article>
+        <span>Processamento</span>
+        <strong>Registros em lote</strong>
+      </article>
+      <article>
+        <span>Saída</span>
+        <strong>Relatório automático</strong>
+      </article>
+      <article>
+        <span>Integração</span>
+        <strong>Excel + Navegador</strong>
+      </article>
+    </section>
+
+    <section class="story-section section-shell" aria-labelledby="story-title">
+      <div class="section-heading">
+        <p class="eyebrow">CONTEXTO DO PROJETO</p>
+        <h2 id="story-title">Transformando uma tarefa repetitiva em um processo automatizado</h2>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card story-card--dark">
+          <span class="card-label">O problema</span>
+          <h3>Cadastros manuais consomem tempo e aumentam o risco de erro</h3>
+          <p>
+            Copiar linha por linha de uma planilha para um formulário exige atenção
+            constante e pode causar campos esquecidos, digitação incorreta e baixa produtividade.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <span class="card-label">A solução</span>
+          <h3>Leitura, validação e preenchimento executados pelo Python</h3>
+          <p>
+            O programa percorre os registros, verifica os campos obrigatórios,
+            separa dados inválidos e envia apenas os cadastros preparados para o formulário.
+          </p>
+        </article>
+
+        <article class="story-card story-card--accent">
+          <span class="card-label">O resultado</span>
+          <h3>Processamento organizado e relatório para conferência</h3>
+          <p>
+            Ao final da execução, uma nova planilha informa quais cadastros foram
+            processados e quais precisam ser corrigidos antes de uma nova tentativa.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="process-section section-shell" id="processo">
+      <div class="section-heading section-heading--light">
+        <p class="eyebrow">FLUXO DA AUTOMAÇÃO</p>
+        <h2>O processo acontece em seis etapas</h2>
+        <p>
+          Cada responsabilidade foi separada para facilitar a leitura do código,
+          a manutenção e a evolução futura do projeto.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-step">
+          <span>01</span>
+          <h3>Leitura da planilha</h3>
+          <p>O OpenPyXL acessa a aba de cadastros e percorre todas as linhas preenchidas.</p>
+        </article>
+
+        <article class="process-step">
+          <span>02</span>
+          <h3>Conversão dos dados</h3>
+          <p>Cada linha é transformada em um dicionário Python com os campos do cadastro.</p>
+        </article>
+
+        <article class="process-step">
+          <span>03</span>
+          <h3>Validação</h3>
+          <p>Os campos obrigatórios são verificados antes de qualquer interação com o site.</p>
+        </article>
+
+        <article class="process-step">
+          <span>04</span>
+          <h3>Login automático</h3>
+          <p>O navegador é aberto e o acesso ao ambiente de demonstração é realizado.</p>
+        </article>
+
+        <article class="process-step">
+          <span>05</span>
+          <h3>Preenchimento web</h3>
+          <p>Mouse, teclado e área de transferência são controlados para preencher o formulário.</p>
+        </article>
+
+        <article class="process-step">
+          <span>06</span>
+          <h3>Relatório final</h3>
+          <p>Os resultados e registros inválidos são gravados em abas separadas de um novo arquivo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="demo-section section-shell" id="demonstracao">
+      <div class="demo-copy">
+        <p class="eyebrow">DEMONSTRAÇÃO EM VÍDEO</p>
+        <h2>Veja a automação executando o fluxo completo</h2>
+        <p>
+          O vídeo pode mostrar a planilha de entrada, a abertura do site, o preenchimento
+          de vários registros e a criação do relatório de resultados.
+        </p>
+
+        <div class="demo-tags" aria-label="Etapas mostradas no vídeo">
+          <span>Leitura da planilha</span>
+          <span>Validação</span>
+          <span>Login automático</span>
+          <span>Preenchimento</span>
+          <span>Relatório final</span>
+        </div>
+      </div>
+
+      <div class="video-shell">
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          poster="img/automacao/automacao-capa.png"
+          aria-label="Demonstração da automação de cadastros com Python"
+        >
+          <source src="video/automacao-cadastros.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeos.
+        </video>
+      </div>
+    </section>
+
+    <section class="features-section section-shell" id="recursos">
+      <div class="section-heading">
+        <p class="eyebrow">RECURSOS IMPLEMENTADOS</p>
+        <h2>Mais do que apenas movimentar o mouse</h2>
+        <p>
+          O projeto reúne tratamento de dados, regras de validação, organização modular,
+          automação visual e geração de arquivos.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <span>01</span>
+          <h3>Leitura de arquivos Excel</h3>
+          <p>Importação de registros de uma planilha .xlsx por meio do OpenPyXL.</p>
+        </article>
+
+        <article class="feature-card">
+          <span>02</span>
+          <h3>Validação de campos</h3>
+          <p>Identificação de informações obrigatórias ausentes antes do processamento.</p>
+        </article>
+
+        <article class="feature-card">
+          <span>03</span>
+          <h3>Processamento em lote</h3>
+          <p>Execução sequencial de vários cadastros usando um único login.</p>
+        </article>
+
+        <article class="feature-card">
+          <span>04</span>
+          <h3>Suporte a acentos</h3>
+          <p>Uso do Pyperclip para inserir corretamente textos e caracteres especiais.</p>
+        </article>
+
+        <article class="feature-card">
+          <span>05</span>
+          <h3>Tratamento de erros</h3>
+          <p>Falhas durante a execução são registradas sem interromper todo o processamento.</p>
+        </article>
+
+        <article class="feature-card">
+          <span>06</span>
+          <h3>Relatório organizado</h3>
+          <p>Criação de abas separadas para resultados processados e dados inválidos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="scale-section section-shell">
+      <div class="scale-panel">
+        <div class="scale-panel__copy">
+          <p class="eyebrow">POTENCIAL DE APLICAÇÃO</p>
+          <h2>Uma base que pode ser adaptada para processos maiores</h2>
+          <p>
+            A mesma lógica pode atender rotinas de importação de cadastros, atualização
+            de sistemas internos, alimentação de CRMs, ERPs e tarefas administrativas repetitivas.
+          </p>
+          <p>
+            Para maiores volumes, o projeto pode evoluir para Playwright, Selenium ou
+            integração direta com APIs, reduzindo a dependência das coordenadas da tela.
+          </p>
+        </div>
+
+        <div class="scale-panel__list" aria-label="Possíveis aplicações da automação">
+          <article><strong>CRM</strong><span>Cadastro de clientes e contatos</span></article>
+          <article><strong>ERP</strong><span>Importação e atualização de registros</span></article>
+          <article><strong>Backoffice</strong><span>Rotinas administrativas repetitivas</span></article>
+          <article><strong>Portais web</strong><span>Preenchimento de formulários em lote</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="architecture-section section-shell">
+      <div class="section-heading section-heading--light">
+        <p class="eyebrow">ARQUITETURA E TECNOLOGIAS</p>
+        <h2>Responsabilidades separadas em módulos</h2>
+        <p>
+          O arquivo principal coordena o fluxo, enquanto os módulos específicos cuidam
+          da planilha e da interação com o navegador.
+        </p>
+      </div>
+
+      <div class="architecture-layout">
+        <div class="code-tree" aria-label="Estrutura de arquivos do projeto">
+          <div class="code-tree__bar">
+            <span></span><span></span><span></span>
+            <p>12_automacao_site_planilha</p>
+          </div>
+
+          <pre><code>12_automacao_site_planilha/
+├── main.py
+├── planilha.py
+├── automacao.py
+├── cadastros_teste_automacao.xlsx
+├── relatorio_automacao.xlsx
+├── imagens/
+│   ├── entrar.png
+│   ├── add.png
+│   └── confirmacao.png
+└── README.md</code></pre>
+        </div>
+
+        <div class="technology-panel">
+          <article><strong>Python</strong><span>Lógica e coordenação do processo</span></article>
+          <article><strong>OpenPyXL</strong><span>Leitura e criação das planilhas</span></article>
+          <article><strong>PyAutoGUI</strong><span>Controle do navegador, mouse e teclado</span></article>
+          <article><strong>Pyperclip</strong><span>Colagem de textos com acentos</span></article>
+          <article><strong>Pathlib</strong><span>Verificação e manipulação de caminhos</span></article>
+          <article><strong>Webbrowser</strong><span>Abertura automática do site</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-shell" id="galeria">
+      <div class="section-heading">
+        <p class="eyebrow">GALERIA DO PROJETO</p>
+        <h2>Entrada, execução e resultado</h2>
+        <p>
+          Adicione as capturas nas pastas abaixo. Clique em uma imagem para ampliar.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <button
+          class="gallery-card gallery-card--wide"
+          type="button"
+          data-full="img/automacao/planilha-entrada.png"
+          data-title="Planilha de entrada com os cadastros"
+        >
+          <img
+            src="img/automacao/planilha-entrada.png"
+            alt="Planilha Excel utilizada como entrada da automação"
+            loading="lazy"
+          >
+          <span>
+            <strong>Planilha de entrada</strong>
+            <small>Registros preparados para o processamento</small>
+          </span>
+        </button>
+
+        <button
+          class="gallery-card"
+          type="button"
+          data-full="img/automacao/formulario-preenchido.png"
+          data-title="Formulário preenchido automaticamente"
+        >
+          <img
+            src="img/automacao/formulario-preenchido.png"
+            alt="Formulário web preenchido automaticamente pelo Python"
+            loading="lazy"
+          >
+          <span>
+            <strong>Preenchimento automático</strong>
+            <small>Dados enviados ao formulário web</small>
+          </span>
+        </button>
+
+        <button
+          class="gallery-card"
+          type="button"
+          data-full="img/automacao/confirmacao-cadastro.png"
+          data-title="Confirmação de cadastro realizado"
+        >
+          <img
+            src="img/automacao/confirmacao-cadastro.png"
+            alt="Mensagem de confirmação após o cadastro automático"
+            loading="lazy"
+          >
+          <span>
+            <strong>Confirmação</strong>
+            <small>Verificação visual do resultado</small>
+          </span>
+        </button>
+
+        <button
+          class="gallery-card gallery-card--wide"
+          type="button"
+          data-full="img/automacao/relatorio-resultados.png"
+          data-title="Relatório final gerado pela automação"
+        >
+          <img
+            src="img/automacao/relatorio-resultados.png"
+            alt="Planilha de relatório gerada ao final da automação"
+            loading="lazy"
+          >
+          <span>
+            <strong>Relatório gerado</strong>
+            <small>Status dos cadastros e registros que precisam de correção</small>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="limitations-section section-shell">
+      <div class="limitations-card">
+        <div>
+          <p class="eyebrow">DECISÕES E EVOLUÇÃO</p>
+          <h2>Limitações conhecidas também fazem parte do projeto</h2>
+        </div>
+
+        <div class="limitations-card__content">
+          <p>
+            A versão atual utiliza o PyAutoGUI, portanto depende da resolução da tela,
+            do zoom do navegador, da posição da janela e do tempo de carregamento dos elementos.
+          </p>
+          <p>
+            Como evolução, o projeto pode receber logs, indicador de progresso, arquivo
+            de configuração, seleção de planilha pela interface e automação com Playwright ou Selenium.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section section-shell">
+      <div class="result-card">
+        <p class="eyebrow">RESULTADO</p>
+        <h2>Uma automação que conecta dados, navegador e relatório em um único fluxo.</h2>
+        <p>
+          O projeto demonstra como Python pode reduzir tarefas repetitivas, organizar
+          validações e integrar arquivos Excel a sistemas web. Mais do que preencher
+          campos, a aplicação controla o processo do início ao fim e registra o resultado.
+        </p>
+
+        <div class="hero-actions hero-actions--center">
+          <a
+            class="button button--light"
+            href="https://github.com/andreirodrigues98/python_portfolio/tree/main/12_automacao_site_planilha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Acessar projeto no GitHub <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="button button--outline" href="index.html#PYTHON">
+            Voltar aos projetos Python
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="project-footer">
+    <p>Automação de Cadastros · Case de Andrei Rodrigues</p>
+    <a href="index.html">Portfólio</a>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxTitle">
+    <button class="lightbox__close" type="button" aria-label="Fechar imagem ampliada">×</button>
+    <div class="lightbox__content">
+      <img id="lightboxImage" src="" alt="">
+      <p id="lightboxTitle"></p>
+    </div>
+  </dialog>
+
+  <script src="automacao-case.js"></script>
+</body>
+</html>
