@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta
+    content="Portfólio de Andrei Rodrigues, desenvolvedor front-end e Python. Projetos web, aplicações com Firebase, automações e sistemas desktop."
+    name="description" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="responsiv.css" rel="stylesheet" />
+  <title>Andrei Rodrigues | Front-end, Python e Sistemas</title>
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <a class="logo" href="#">Andrei Rodrigues</a>
+    <button aria-expanded="false" aria-label="Abrir menu" class="nav__toggle">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav aria-hidden="true" class="menu">
+    <div class="menu__inner">
+      <ul class="menu__list" role="menu">
+        <li><a data-close="" href="#sobre" role="menuitem">Sobre</a></li>
+        <li><a data-close="" href="#CASE" role="menuitem">Projetos</a></li>
+        <li><a data-close="" href="#PYTHON" role="menuitem">Python</a></li>
+        <li><a data-close="" href="#IDEIA" role="menuitem">Contato</a></li>
+      </ul>
+      <div class="menu__footer">
+        <div class="menu__social">
+          <a aria-label="Instagram" href="https://www.instagram.com/andreirodriguesx">
+            <span class="icon"
+              style="--icon-url: url('https://img.icons8.com/ios/50/ffffff/instagram-new.png');"></span>
+          </a>
+          <a aria-label="E-mail" href="mailto:andreirodrigues98@hotmail.com">
+            <span class="icon" style="--icon-url: url('https://img.icons8.com/ios/50/ffffff/new-post.png');"></span>
+          </a>
+          <a aria-label="GitHub de Andrei Rodrigues" class="menu__github" href="https://github.com/andreirodrigues98"
+            rel="noopener noreferrer" target="_blank"><span class="menu-social-text">GitHub</span></a>
+        </div>
+        <address class="menu__address"><strong>Andrei Rodrigues</strong><br />Desenvolvedor Front-end e
+          Python<br />Interfaces, aplicações e sistemas</address>
+      </div>
+    </div>
+  </nav>
+
+  <section aria-label="capa" class="hero" id="home">
+    <video autoplay="" class="hero__video" loop="" muted="" playsinline="" preload="auto" src="video/esfera2.mp4"
+      webkit-playsinline=""></video>
+    <div aria-hidden="true" class="hero__blob"></div>
+    <div class="hero__inner">
+      <p class="hero__identity">ANDREI RODRIGUES · DESENVOLVEDOR FRONT-END E PYTHON</p>
+      <h1 class="hero__title">
+        <span class="line line-left">Interfaces e sistemas.</span>
+        <span class="line line-right accent">Código para uso real.</span>
+      </h1>
+      <p class="hero__intro">Crio sites, aplicações web, automações e sistemas desktop para empresas, profissionais e
+        produtos digitais.</p>
+      <div class="hero__actions">
+        <a class="hero__button hero__button--primary" href="#CASE">Ver projetos</a>
+        <a class="hero__button hero__button--ghost" href="https://github.com/andreirodrigues98"
+          rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+        <a class="hero__button hero__button--ghost" href="curriculo-andrei-rodrigues.pdf"
+          rel="noopener noreferrer" target="_blank">Currículo ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-label="manifesto" class="manifesto" id="sobre">
+    <div class="manifesto__wrap">
+      <h2 class="m-title reveal">Visual atrai.<br /><strong><em>Funcionamento gera confiança.</em></strong></h2>
+      <!-- Arcos -->
+
+      <div aria-hidden="true" class="m-arcs">
+        <div class="arc arc-a"></div>
+        <div class="arc arc-b"></div>
+      </div>
+      <div class="m-copy reveal">
+        <p>Desenvolvo experiências digitais que unem apresentação profissional, usabilidade e código.</p>
+        <p>Com HTML, CSS, JavaScript, Firebase e Python, construo desde sites e aplicações web até automações e sistemas
+          desktop.</p>
+        <p>Cada projeto é pensado para <strong>funcionar em uso real, ser testável e continuar evoluindo.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção zoom -->
+  <section class="grow" id="criacao-de-marca">
+    <div class="grow__wrap">
+      <figure class="grow__media">
+        <img alt="Interface em construção — desenvolvimento front-end" class="grow__img" src="img/laptop.png" />
+      </figure>
+      <div class="grow__copy">
+        <p class="eyebrow">DESENVOLVIMENTO WEB E PYTHON</p>
+        <h2 class="grow__title">Da ideia à interface.<br /><span class="accent">Do código à solução.</span></h2>
+
+
+        <p>Transformo necessidades em interfaces responsivas e fluxos funcionais, cuidando da estrutura, da navegação e
+          dos detalhes que tornam o projeto claro para o usuário.</p>
+        <p>Também desenvolvo soluções em Python com integrações, regras de negócio, impressão, relatórios e automações
+          para simplificar processos.</p><a class="btn btn--ghost" href="#CASE">Ver projetos em funcionamento →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION · processo desenvolvimento-->
+  <section class="fullseven" id="fullseven">
+    <div class="fs-wrap">
+      <!-- Coluna esquerda -->
+      <div class="fs-left">
+        <p class="fs-eyebrow">PROCESSO DE DESENVOLVIMENTO</p>
+        <h2 class="fs-title">Da ideia à <span class="accent">solução.</span></h2>
+        <p class="fs-lede">Um processo direto para <strong>entender, estruturar, desenvolver, testar e evoluir cada
+            solução.</strong></p>
+      </div>
+      <!-- Centro · VÍDEO -->
+      <figure class="fs-orb">
+        <video autoplay="" class="fs-video" loop="" muted="" playsinline="" preload="auto" src="video/esfera1.mp4"
+          webkit-playsinline=""></video>
+      </figure>
+      <!-- Direita · Acordeão -->
+      <div class="fs-accordion" id="fs-acc">
+        <button class="acc-item is-open" data-angle="0">
+          <span>Entendimento</span><i aria-hidden="true"></i>
+        </button>
+        <div class="acc-panel" style="--h: 150px;">
+          <p>Começo identificando o problema, o público e o resultado esperado. Isso ajuda a definir prioridades e evita
+            desenvolver funcionalidades sem um objetivo claro.</p>
+        </div>
+        <button class="acc-item" data-angle="90">
+          <span>Estrutura e interface</span><i aria-hidden="true"></i>
+        </button>
+        <div class="acc-panel" style="--h: 140px;">
+          <p>Organizo os fluxos, o conteúdo, a navegação e os componentes para que a experiência seja clara e funcione
+            bem em diferentes telas.</p>
+        </div>
+        <button class="acc-item" data-angle="180">
+          <span>Desenvolvimento</span><i aria-hidden="true"></i>
+        </button>
+        <div class="acc-panel" style="--h: 140px;">
+          <p>Transformo a solução em código, separando responsabilidades, validações, integrações e regras de negócio
+            para facilitar a manutenção.</p>
+        </div>
+        <button class="acc-item" data-angle="270">
+          <span>Testes e evolução</span><i aria-hidden="true"></i>
+        </button>
+        <div class="acc-panel" style="--h: 140px;">
+          <p>Valido os fluxos, testo a responsividade, corrijo erros, publico uma versão funcional e continuo melhorando
+            o projeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="servicos-title" class="services" id="servicos">
+    <div class="services__header">
+      <p class="services__eyebrow">TECNOLOGIAS E COMPETÊNCIAS</p>
+      <h2 class="services__title">Ferramentas para transformar ideias em produtos funcionais.</h2>
+      <p class="services__hint">Toque em uma habilidade para ver como aplico no projeto.</p>
+    </div>
+    <div class="services__wrap">
+      <h3 class="visually-hidden" id="servicos-title">Tecnologias, competências e entregas</h3>
+      <div class="svc-col">
+        <h4 class="svc-head">Front-end</h4>
+        <ul class="svc-list">
+          <li><button class="svc-item" data-desc="Estruturo páginas com marcação clara, acessível e fácil de manter."
+              type="button">HTML semântico</button></li>
+          <li><button class="svc-item"
+              data-desc="Crio interfaces adaptadas para celular, tablet e computador, preservando leitura e navegação."
+              type="button">CSS responsivo</button></li>
+          <li><button class="svc-item"
+              data-desc="Desenvolvo interações, validações, filtros, componentes dinâmicos e comportamentos de interface."
+              type="button">JavaScript</button></li>
+          <li><button class="svc-item"
+              data-desc="Aplico textos alternativos, navegação por teclado, contraste e semântica para ampliar o acesso."
+              type="button">Acessibilidade</button></li>
+        </ul>
+      </div>
+      <div class="svc-col">
+        <h4 class="svc-head">Aplicações web</h4>
+        <ul class="svc-list">
+          <li><button class="svc-item"
+              data-desc="Implemento autenticação para separar acessos e proteger áreas individuais da aplicação."
+              type="button">Firebase Auth</button></li>
+          <li><button class="svc-item"
+              data-desc="Organizo dados em tempo real para aplicações com cadastros, pedidos, finanças e históricos."
+              type="button">Cloud Firestore</button></li>
+          <li><button class="svc-item"
+              data-desc="Preparo aplicações instaláveis e adequadas ao uso em celulares e telas menores."
+              type="button">PWA</button></li>
+          <li><button class="svc-item"
+              data-desc="Publico projetos para teste real por meio de GitHub Pages, Netlify e serviços web."
+              type="button">Deploy e publicação</button></li>
+        </ul>
+      </div>
+      <div class="svc-col">
+        <h4 class="svc-head">Python e desktop</h4>
+        <ul class="svc-list">
+          <li><button class="svc-item"
+              data-desc="Uso Python para transformar regras de negócio em automações e sistemas funcionais."
+              type="button">Python</button></li>
+          <li><button class="svc-item"
+              data-desc="Organizo responsabilidades em classes e módulos para facilitar manutenção e evolução."
+              type="button">Programação orientada a objetos</button></li>
+          <li><button class="svc-item" data-desc="Desenvolvo interfaces desktop para uso em computadores Windows."
+              type="button">CustomTkinter</button></li>
+          <li><button class="svc-item"
+              data-desc="Integro dados, relatórios, comprovantes e impressoras comuns ou térmicas."
+              type="button">Automação e impressão</button></li>
+        </ul>
+      </div>
+      <div class="svc-col">
+        <h4 class="svc-head">Qualidade e entrega</h4>
+        <ul class="svc-list">
+          <li><button class="svc-item"
+              data-desc="Versiono o código e organizo repositórios para acompanhar mudanças e apresentar os projetos."
+              type="button">Git e GitHub</button></li>
+          <li><button class="svc-item"
+              data-desc="Separo interface, serviços, regras e integrações para tornar o projeto mais compreensível."
+              type="button">Organização de código</button></li>
+          <li><button class="svc-item"
+              data-desc="Valido ações importantes, responsividade, mensagens de erro e comportamentos antes da publicação."
+              type="button">Testes de fluxos</button></li>
+          <li><button class="svc-item"
+              data-desc="Registro funcionamento, tecnologias, decisões e instruções para facilitar uso e continuidade."
+              type="button">Documentação</button></li>
+        </ul>
+      </div>
+      <div aria-live="polite" class="svc-tip" role="status">
+        <div class="svc-tip__inner"></div><span aria-hidden="true" class="svc-tip__arrow"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="deliver" id="deliver">
+    <div class="deliver__stage">
+      <h2 class="deliver__title" id="deliverTitle">Projetos. <span class="accent">Na prática.</span>
+      </h2>
+    </div>
+    <p class="deliver__sub">Aplicações web e sistemas Python apresentados com demonstrações, estudos de caso e
+      repositórios.</p>
+  </section>
+
+  <!-- ====== CASES / PROJETOS ====== -->
+  <section aria-labelledby="cases-title" class="cases" id="CASE">
+    <div class="cases__header">
+      <div>
+        <p class="cases__eyebrow">PROJETOS E SOLUÇÕES</p>
+        <h2 class="cases__title" id="cases-title">Projetos web com interface, lógica e uso real.</h2>
+      </div>
+      <p class="cases__hint">Arraste para o lado e veja mais projetos.</p>
+    </div>
+    <div aria-label="Carrossel de projetos" class="cases__carousel">
+      <button aria-label="Projeto anterior" class="cases__arrow cases__arrow--prev" type="button">
+        <svg aria-hidden="true" viewbox="0 0 42 42">
+          <path d="M26 11L16 21L26 31" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2.8"></path>
+          <path d="M17 21H32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.8"></path>
+        </svg>
+      </button>
+      <div class="cases__track" tabindex="0">
+
+
+
+
+
+
+
+        <article class="case-card case-card--controly">
+          <img alt="Mockup do painel da aplicação Controly" loading="lazy" src="img/controly/controly-capa.png" />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">Aplicação web · Versão funcional em evolução</p>
+            <h3 class="case-title">Controly</h3>
+            <p class="case-meta">Rotina, metas, estudos e finanças em um único painel</p>
+            <a aria-label="Conhecer o case e acessar a demonstração do Controly" class="case-cta"
+              href="projeto-controly.html">
+              Ver case <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+        <article class="case-card case-card--rodapay">
+          <img alt="Apresentação mobile da aplicação RodaPay" loading="lazy" src="img/rodapay/rodapay-capa.png" />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">Aplicação financeira · Mobile-first · Versão funcional</p>
+            <h3 class="case-title">RodaPay</h3>
+            <p class="case-meta">Finanças, metas e produtividade para motoristas de aplicativo</p>
+            <a aria-label="Conhecer o case e acessar a demonstração do RodaPay" class="case-cta"
+              href="projeto-rodapay.html">
+              Ver case <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+        <article class="case-card case-card--dudoce">
+          <img alt="Página inicial do e-commerce Dudôce" loading="lazy" src="img/dudoce_site_foto.png" />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">E-commerce · Firebase</p>
+            <h3 class="case-title">Dudôce</h3>
+            <p class="case-meta">Catálogo, carrinho, checkout, pedidos e painel administrativo</p>
+            <a aria-label="Visitar o e-commerce Dudôce em uma nova aba" class="case-cta"
+              href="https://dudoce.netlify.app/" rel="noopener noreferrer" target="_blank">
+              Visitar loja <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+        <article class="case-card case-card--nava">
+          <img alt="Página inicial do site NAVA studio" loading="lazy" src="img/nava-studio.png" />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">Site institucional</p>
+            <h3 class="case-title">NAVA studio.</h3>
+            <p class="case-meta">Branding, direção visual e presença digital · HTML, CSS e JavaScript</p>
+            <a aria-label="Visitar o site NAVA studio em uma nova aba" class="case-cta"
+              href="https://andreirodrigues98.github.io/navastudio/" rel="noopener noreferrer" target="_blank">
+              Visitar site <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+        <article class="case-card case-card--alagim">
+          <img alt="Página inicial do site institucional Alagim Jagun" loading="lazy" src="img/alagim-jagun.png" />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">Site institucional</p>
+            <h3 class="case-title">Alagim Jagun</h3>
+            <p class="case-meta">Identidade visual · HTML, CSS e JavaScript</p>
+            <a aria-label="Visitar o site Alagim Jagun em uma nova aba" class="case-cta"
+              href="https://sacerdotealagim.github.io/allanmoraes/" rel="noopener noreferrer" target="_blank">
+              Visitar site <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+        <article class="case-card case-card--azul-virgem">
+          <img alt="Página inicial da loja virtual Ateliê Azul Virgem" loading="lazy" src="img/azul-virgem.png" />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">E-commerce front-end</p>
+            <h3 class="case-title">Ateliê Azul Virgem</h3>
+            <p class="case-meta">Catálogo, filtros, carrinho e checkout · HTML, CSS e JavaScript</p>
+            <a aria-label="Visitar a loja Ateliê Azul Virgem em uma nova aba" class="case-cta"
+              href="https://andreirodrigues98.github.io/azulvirgem/" rel="noopener noreferrer" target="_blank">
+              Visitar loja <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+        <article class="case-card case-card--aphrodite">
+          <img alt="Página inicial da loja virtual Aphrodite Sex Shop" loading="lazy" src="img/aphrodite.png" />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">E-commerce front-end</p>
+            <h3 class="case-title">Aphrodite Sex Shop</h3>
+            <p class="case-meta">Catálogo, busca, categorias e carrinho · HTML, CSS e JavaScript</p>
+            <a aria-label="Visitar a loja Aphrodite em uma nova aba" class="case-cta"
+              href="https://aphroditesex-shop.netlify.app/" rel="noopener noreferrer" target="_blank">
+              Visitar loja <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+      <button aria-label="Próximo projeto" class="cases__arrow cases__arrow--next" type="button">
+        <svg aria-hidden="true" viewbox="0 0 42 42">
+          <path d="M16 11L26 21L16 31" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2.8"></path>
+          <path d="M25 21H10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.8"></path>
+        </svg>
+      </button>
+    </div>
+  </section>
+  <!-- ===== PYTHON, AUTOMAÇÃO E SISTEMAS ===== -->
+  <section aria-labelledby="python-cases-title" class="cases" id="PYTHON">
+    <div class="cases__header">
+      <div>
+        <p class="cases__eyebrow">PYTHON, AUTOMAÇÃO E SISTEMAS</p>
+        <h2 class="cases__title" id="python-cases-title">Sistemas, automações e lógica com Python.</h2>
+      </div>
+      <p class="cases__hint">
+        Arraste para o lado e veja mais projetos.
+      </p>
+    </div>
+    <div aria-label="Carrossel de projetos Python" class="cases__carousel">
+      <button aria-label="Projeto Python anterior" class="cases__arrow cases__arrow--prev" type="button">
+        <svg aria-hidden="true" viewbox="0 0 42 42">
+          <path d="M26 11L16 21L26 31" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2.8"></path>
+          <path d="M17 21H32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.8"></path>
+        </svg>
+      </button>
+      <div class="cases__track" tabindex="0">
+        <article class="case-card case-card--python-lab">
+          <img
+            class="python-lab-cover"
+            src="https://opengraph.githubassets.com/portfolio-python-v1/andreirodrigues98/python_portfolio"
+            alt="Prévia do repositório Laboratório Python de Andrei Rodrigues"
+            data-python-preview
+            decoding="async"
+            loading="lazy"
+          />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">Python · Lógica · POO · Automação</p>
+            <h3 class="case-title">Laboratório Python</h3>
+            <p class="case-meta">
+              Exercícios, automações e sistemas que demonstram lógica, organização de código e resolução de problemas
+            </p>
+            <a aria-label="Conhecer todos os projetos do Laboratório Python no GitHub" class="case-cta"
+              href="https://github.com/andreirodrigues98/python_portfolio" rel="noopener noreferrer" target="_blank">
+              Ver projetos <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+       
+        <!-- SISTEMA DE IMPRESSÃO -->
+        <article class="case-card case-card--sistema-impressao">
+          <img alt="Tela do OrderFlow Desktop com pedidos aguardando impressão" loading="lazy"
+            src="img/python/sistema-impressao.png" />
+          <div aria-hidden="true" class="case-shade"></div>
+          <div class="case-info">
+            <p class="case-kicker">Python · CustomTkinter · Firebase · Versão 1.0 em evolução</p>
+            <h3 class="case-title">OrderFlow Desktop</h3>
+            <p class="case-meta">Recebimento em tempo real, impressão, histórico, relatórios e reimpressão de pedidos
+            </p>
+            <a aria-label="Conhecer o case do OrderFlow Desktop" class="case-cta" href="projeto-orderflow.html">
+              Ver case <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="case-card case-card--automacao-planilha">
+          <img
+            src="img/python/automacao-planilha.png"
+            alt="Automação em Python processando cadastros de uma planilha Excel"
+            loading="lazy"
+          />
+
+          <div aria-hidden="true" class="case-shade"></div>
+
+          <div class="case-info">
+            <p class="case-kicker">
+              Python · OpenPyXL · PyAutoGUI · Automação de processos
+            </p>
+
+            <h3 class="case-title">
+              Automação de Cadastros
+            </h3>
+
+            <p class="case-meta">
+              Leitura e validação de planilhas, preenchimento automático de formulários
+              web e geração de relatório com os resultados
+            </p>
+
+            <a
+              aria-label="Conhecer o case da Automação de Cadastros com Python"
+              class="case-cta"
+              href="projeto-automacao-planilha.html"
+            >
+              Ver case <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+         <!-- CONCILIA -->
+        <article class="case-card case-card--conciliapy">
+          <img
+            src="img/conciliapy/conciliapy-capa.png"
+            alt="Tela do ConciliaPy com sistema de conciliação financeira por planilhas"
+            loading="lazy"
+          />
+
+          <div aria-hidden="true" class="case-shade"></div>
+
+          <div class="case-info">
+            <p class="case-kicker">
+              Python · Streamlit · Pandas · SQL Server · SQLAlchemy
+            </p>
+
+            <h3 class="case-title">
+              ConciliaPy
+            </h3>
+
+            <p class="case-meta">
+              Conciliação financeira por planilhas, identificação de divergências,
+              geração de relatório Excel e histórico persistido em banco de dados.
+            </p>
+
+            <a
+              aria-label="Conhecer o case do ConciliaPy"
+              class="case-cta"
+              href="projeto-conciliapy.html"
+            >
+              Ver case <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+      <button aria-label="Próximo projeto Python" class="cases__arrow cases__arrow--next" type="button">
+        <svg aria-hidden="true" viewbox="0 0 42 42">
+          <path d="M16 11L26 21L16 31" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2.8"></path>
+          <path d="M25 21H10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.8"></path>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+
+  <section class="contact-invite" id="IDEIA">
+    <p class="invite-top">ABERTO A OPORTUNIDADES E PROJETOS</p>
+    <h2 class="invite-title">Vamos conversar?</h2>
+    <p class="invite-sub">Estou disponível para oportunidades em desenvolvimento front-end e Python, além de projetos
+      para empresas, profissionais e produtos digitais.</p>
+  </section>
+
+  <section class="quote-wrap">
+    <div class="quote-card">
+      <form class="quote-form" id="quoteForm">
+        <div class="q-field">
+          <label for="q-name">Seu Nome <span class="req">*</span></label>
+          <input id="q-name" name="name" required="" type="text" />
+        </div>
+        <div class="q-field">
+          <label for="q-email">E-mail para contato <span class="req">*</span></label>
+          <input id="q-email" name="email" required="" type="email" />
+        </div>
+        <div class="q-field">
+          <label for="q-whats">WhatsApp (opcional)</label>
+          <input id="q-whats" name="whatsapp" type="tel" />
+        </div>
+        <fieldset class="q-field2">
+          <legend>Qual é o assunto? <span class="req">*</span></legend>
+
+
+
+
+
+
+
+
+          <label class="q-check"><input name="needs" type="checkbox" value="Manutenção, correções ou melhorias" /> Manutenção, correções ou melhorias</label><label class="q-check"><input name="needs" type="checkbox"
+              value="Site ou aplicação web" /> Site ou aplicação web</label><label class="q-check"><input name="needs"
+              type="checkbox" value="Automação ou sistema Python" /> Automação ou sistema Python</label><label
+            class="q-check"><input name="needs" type="checkbox" value="Projeto freelance ou parceria" /> Projeto
+            freelance ou parceria</label><label class="q-check"><input id="q-other-check" name="needs" type="checkbox"
+              value="Outro" /> Outro</label>
+          <div class="q-other" hidden="" id="q-other-wrap">
+            <label for="q-other-text">Descreva o assunto</label>
+            <textarea id="q-other-text" name="otherText"
+              placeholder="Escreva aqui o que você precisa ou quer conversar..." rows="4"></textarea>
+          </div>
+        </fieldset>
+        <button class="q-btn" type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SEÇÃO FOOTER ===== -->
+  <footer class="hi-footer" id="contact">
+    <div class="hi-footer__top">
+      <div class="hi-footer__col">
+        <div class="hi-footer__kicker">VAMOS CONVERSAR?</div>
+        <a class="hi-footer__pill"
+          href="https://wa.me/5571982564207?text=Ol%C3%A1%2C%20Andrei.%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto%20ou%20oportunidade.%20Podemos%20falar%3F"
+          rel="noopener" target="_blank"><span class="hi-flip"><span class="hi-front">ENTRAR EM CONTATO</span><span
+              class="hi-back">ENTRAR EM CONTATO</span></span></a>
+      </div>
+      <a class="hi-footer__link" href="https://www.instagram.com/andreirodriguesx" rel="noopener" target="_blank"><span
+          class="hi-flip"><span class="hi-front">INSTAGRAM</span><span class="hi-back">INSTAGRAM</span></span></a>
+      <a class="hi-footer__link" href="mailto:andreirodrigues98@hotmail.com"><span class="hi-flip"><span
+            class="hi-front">E-MAIL</span><span class="hi-back">E-MAIL</span></span></a>
+      <button aria-label="Voltar ao topo" class="hi-footer__back" type="button">
+        <span class="hi-footer__backIcon"><span class="hi-flip hi-flip--icon"><span class="hi-front"><svg fill="none"
+                height="16" viewbox="0 0 24 24" width="16">
+                <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="3"></path>
+              </svg></span><span class="hi-back"><svg fill="none" height="16" viewbox="0 0 24 24" width="16">
+                <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="3"></path>
+              </svg></span></span></span>
+        <span class="hi-footer__backText">Voltar ao Topo</span>
+      </button>
+    </div>
+    <div aria-hidden="true" class="hi-footer__stage">
+      <div class="hi-footer__marquee hi-footer__marquee--top">
+        <div class="hi-footer__track hi-footer__track--right">
+          <span>WEB DEVELOPMENT</span>
+          <span>PYTHON</span>
+          <span>INTERFACES</span>
+          <span>CÓDIGO APLICADO</span>
+          <span>PROJETOS ONLINE</span>
+          <span>EXPERIÊNCIA DIGITAL</span>
+          <span>WEB DEVELOPMENT</span>
+          <span>PYTHON</span>
+        </div>
+      </div>
+      <div class="hi-footer__marquee hi-footer__marquee--bottom">
+        <div class="hi-footer__track hi-footer__track--left">
+          <span>WEB, INTERFACE E AUTOMAÇÃO</span>
+          <span>LÓGICA</span>
+          <span>RESPONSIVIDADE</span>
+          <span>SOLUÇÕES DIGITAIS</span>
+          <span>INTERFACE FUNCIONAL</span>
+          <span>DESENVOLVIMENTO WEB</span>
+          <span>WEB, INTERFACE E AUTOMAÇÃO</span>
+          <span>LÓGICA</span>
+        </div>
+      </div>
+      <a aria-label="Fale com Andrei Rodrigues no WhatsApp" class="hi-footer__circle"
+        href="https://wa.me/5571982564207?text=Ol%C3%A1%2C%20Andrei.%20Gostei%20do%20seu%20trabalho%20e%20quero%20falar%20sobre%20desenvolvimento%20web%2C%20interface%20ou%20automa%C3%A7%C3%A3o.%20Podemos%20conversar%3F"
+        rel="noopener" target="_blank"><span class="hi-footer__circleCore"><svg aria-hidden="true"
+            class="hi-footer__ring" viewbox="0 0 200 200">
+            <defs>
+              <path d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" id="hiRingPath"></path>
+            </defs><text class="hi-footer__ringText">
+              <textpath href="#hiRingPath" startoffset="50%" text-anchor="middle">CÓDIGO • INTERFACE • LÓGICA • ENTREGA
+                • CÓDIGO • INTERFACE</textpath>
+            </text>
+          </svg><span class="hi-flip hi-flip--icon hi-footer__circleArrow"><span class="hi-front">↗</span><span
+              class="hi-back">↗</span></span></span></a>
+    </div>
+    <a class="brand2" href="#home">
+      <h3>Andrei Rodrigues</h3>
+    </a>
+  </footer>
+
+  <a aria-label="Fale no WhatsApp" class="wa"
+    href="https://wa.me/5571982564207?text=Ol%C3%A1%2C%20Andrei.%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA%20sobre%20um%20projeto%2C%20site%20ou%20oportunidade."
+    rel="noopener" target="_blank"><svg style="color: #f2f2f2" viewbox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z">
+      </path>
+    </svg></a>
+
+  <button aria-label="Voltar ao topo" class="toTop">
+    <svg aria-hidden="true" height="22" viewbox="0 0 24 24" width="22">
+      <path d="M12 5l7 7-1.4 1.4L13 9.8V19h-2V9.8L6.4 13.4 5 12z" fill="currentColor"></path>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
